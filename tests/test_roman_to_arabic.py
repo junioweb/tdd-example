@@ -41,15 +41,18 @@ class TestConverterRomanToArabic:
         expected_result = 67
         assert roman_to_arabic.convert('LXVII') == expected_result
 
-    def test_should_subtract_one_unit_with_next_when_previous_is_equal_I_and_next_is_equal_V_or_X(self, roman_to_arabic):
+    def test_should_subtract_one_unit_with_next_when_previous_is_equal_I_and_next_is_equal_V_or_X(self,
+                                                                                                  roman_to_arabic):
         expected_result = 9
         assert roman_to_arabic.convert('IX') == expected_result
 
-    def test_should_subtract_ten_units_with_next_when_previous_is_equal_X_and_next_is_equal_L_or_C(self, roman_to_arabic):
+    def test_should_subtract_ten_units_with_next_when_previous_is_equal_X_and_next_is_equal_L_or_C(self,
+                                                                                                   roman_to_arabic):
         expected_result = 40
         assert roman_to_arabic.convert('XL') == expected_result
 
-    def test_should_subtract_hundred_units_with_next_when_previous_is_equal_C_and_next_is_equal_D_or_M(self, roman_to_arabic):
+    def test_should_subtract_hundred_units_with_next_when_previous_is_equal_C_and_next_is_equal_D_or_M(self,
+                                                                                                       roman_to_arabic):
         expected_result = 900
         assert roman_to_arabic.convert('CM') == expected_result
 
