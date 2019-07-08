@@ -27,7 +27,7 @@ class RomanToArabic:
                     previous = self._alias_roman_numeral[numeral]
                 elif previous == 1 and (numeral == 'X' or numeral == 'V'):
                     if result != previous:
-                        result += self._alias_roman_numeral[numeral] - (previous)
+                        result += self._alias_roman_numeral[numeral] - (2 * previous)
                     else:
                         result = self._alias_roman_numeral[numeral] - previous
                     previous = self._alias_roman_numeral[numeral]
