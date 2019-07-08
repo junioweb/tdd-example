@@ -19,4 +19,4 @@ jobs:
           command: |
             . .vEnv/bin/activate
             flake8 --exclude=.vEnv* --statistics
-            pytest -v --cov=numerals_converter
+            pytest -v --cov=src tests/
